@@ -13,6 +13,10 @@
 		894BAD30268686B5002BB829 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894BAD2F268686B5002BB829 /* Preview Assets.xcassets */; };
 		894BAD32268686B5002BB829 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BAD31268686B5002BB829 /* Persistence.swift */; };
 		894BAD35268686B5002BB829 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 894BAD33268686B5002BB829 /* CoreDataProject.xcdatamodeld */; };
+		89C77BB82688C85F006B2BE0 /* AdvancedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C77BB72688C85F006B2BE0 /* AdvancedContentView.swift */; };
+		89C77BBC2688C919006B2BE0 /* Games+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C77BBA2688C919006B2BE0 /* Games+CoreDataClass.swift */; };
+		89C77BBD2688C919006B2BE0 /* Games+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C77BBB2688C919006B2BE0 /* Games+CoreDataProperties.swift */; };
+		89C77BBF2688CC8C006B2BE0 /* FilteredGameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C77BBE2688CC8C006B2BE0 /* FilteredGameList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		894BAD31268686B5002BB829 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		894BAD34268686B5002BB829 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		894BAD36268686B5002BB829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C77BB72688C85F006B2BE0 /* AdvancedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedContentView.swift; sourceTree = "<group>"; };
+		89C77BBA2688C919006B2BE0 /* Games+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Games+CoreDataClass.swift"; sourceTree = "<group>"; };
+		89C77BBB2688C919006B2BE0 /* Games+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Games+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		89C77BBE2688CC8C006B2BE0 /* FilteredGameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredGameList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		894BAD27268686B2002BB829 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				89C77BBA2688C919006B2BE0 /* Games+CoreDataClass.swift */,
+				89C77BBB2688C919006B2BE0 /* Games+CoreDataProperties.swift */,
 				894BAD28268686B2002BB829 /* CoreDataProjectApp.swift */,
-				894BAD2A268686B2002BB829 /* ContentView.swift */,
+				89C77BB92688C865006B2BE0 /* View */,
 				894BAD2C268686B5002BB829 /* Assets.xcassets */,
 				894BAD31268686B5002BB829 /* Persistence.swift */,
 				894BAD36268686B5002BB829 /* Info.plist */,
@@ -73,6 +83,16 @@
 				894BAD2F268686B5002BB829 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89C77BB92688C865006B2BE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89C77BB72688C85F006B2BE0 /* AdvancedContentView.swift */,
+				894BAD2A268686B2002BB829 /* ContentView.swift */,
+				89C77BBE2688CC8C006B2BE0 /* FilteredGameList.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C77BB82688C85F006B2BE0 /* AdvancedContentView.swift in Sources */,
 				894BAD32268686B5002BB829 /* Persistence.swift in Sources */,
+				89C77BBD2688C919006B2BE0 /* Games+CoreDataProperties.swift in Sources */,
 				894BAD2B268686B2002BB829 /* ContentView.swift in Sources */,
 				894BAD35268686B5002BB829 /* CoreDataProject.xcdatamodeld in Sources */,
 				894BAD29268686B2002BB829 /* CoreDataProjectApp.swift in Sources */,
+				89C77BBF2688CC8C006B2BE0 /* FilteredGameList.swift in Sources */,
+				89C77BBC2688C919006B2BE0 /* Games+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
