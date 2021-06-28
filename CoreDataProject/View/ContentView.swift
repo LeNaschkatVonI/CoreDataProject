@@ -42,7 +42,11 @@ struct ContentView: View {
                     Text(ship.name ?? "unknown name")
                 }
             }
-            .navigationBarItems(trailing: NavigationLink(
+            .navigationBarItems(leading: NavigationLink(
+                                    destination: MoreAdvancedContentView(),
+                                    label: {
+                                        /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                                    }),trailing: NavigationLink(
                                     destination: AdvancedContentView(),
                                     label: {
                                         /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
