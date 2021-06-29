@@ -11,11 +11,12 @@ import CoreData
 struct AdvancedContentView: View {
     
     @Environment(\.managedObjectContext) var viewContext
-    @State var genreFilter = "co-op"
+    @State var filter: String = ""
+    var genreArray = ["co-op", "solo"]
     
     var body: some View {
         VStack {
-            FilteredGameList(filterKey: "genre", filterValue: genreFilter) { (gameProvide: Games) in
+            FilteredGameList(filterKey: "genre", filterValue: filter) { (gameProvide: Games) in
                 HStack {
                     Text(gameProvide.wrappedGenre)
                     Text(gameProvide.wrappedTitle)
@@ -37,11 +38,10 @@ struct AdvancedContentView: View {
                 
                 try? viewContext.save()
             }
-            Button("filter by co-op") {
-                genreFilter = "co-op"
-            }
-            Button("filter by single") {
-                genreFilter = "solo"
+            Picker("select sorting way", selection: $filter) {
+                ForEach(genreArray, id: \.self) {
+                    Text($0)
+                }
             }
         }
     }

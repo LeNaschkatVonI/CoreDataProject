@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893AA62A268AA0E600CBE4A3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893AA629268AA0E600CBE4A3 /* Settings.swift */; };
 		894BAD29268686B2002BB829 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BAD28268686B2002BB829 /* CoreDataProjectApp.swift */; };
 		894BAD2B268686B2002BB829 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BAD2A268686B2002BB829 /* ContentView.swift */; };
 		894BAD2D268686B5002BB829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894BAD2C268686B5002BB829 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		893AA629268AA0E600CBE4A3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		894BAD25268686B2002BB829 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		894BAD28268686B2002BB829 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		894BAD2A268686B2002BB829 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		893AA62B268AA0EC00CBE4A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				893AA629268AA0E600CBE4A3 /* Settings.swift */,
+				89C77BBE2688CC8C006B2BE0 /* FilteredGameList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		894BAD1C268686B2002BB829 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +98,7 @@
 				894BAD36268686B5002BB829 /* Info.plist */,
 				894BAD33268686B5002BB829 /* CoreDataProject.xcdatamodeld */,
 				894BAD2E268686B5002BB829 /* Preview Content */,
+				893AA62B268AA0EC00CBE4A3 /* Model */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -104,7 +116,6 @@
 			children = (
 				89C77BB72688C85F006B2BE0 /* AdvancedContentView.swift */,
 				894BAD2A268686B2002BB829 /* ContentView.swift */,
-				89C77BBE2688CC8C006B2BE0 /* FilteredGameList.swift */,
 				89BC235B268945C90082B367 /* MoreAdvancedContentView.swift */,
 			);
 			path = View;
@@ -183,6 +194,7 @@
 				89C77BB82688C85F006B2BE0 /* AdvancedContentView.swift in Sources */,
 				89BC2358268942970082B367 /* Candy+CoreDataProperties.swift in Sources */,
 				894BAD32268686B5002BB829 /* Persistence.swift in Sources */,
+				893AA62A268AA0E600CBE4A3 /* Settings.swift in Sources */,
 				89C77BBD2688C919006B2BE0 /* Games+CoreDataProperties.swift in Sources */,
 				89BC2359268942970082B367 /* Country+CoreDataClass.swift in Sources */,
 				894BAD2B268686B2002BB829 /* ContentView.swift in Sources */,

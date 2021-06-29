@@ -31,8 +31,8 @@ extension Country {
     public var candyArray: [Candy] {
         let set = candy as? Set<Candy> ?? []
         
-        return set.sorted { candy1, candy2 in
-            candy1.wrappedName < candy2.wrappedName
+        return set.sorted {
+            $0.wrappedName < $1.wrappedName
         }
     }
 }
